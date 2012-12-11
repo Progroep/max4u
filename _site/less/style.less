@@ -32,6 +32,10 @@ strong{
   color: @purple;
 }
 
+.page-header{
+  margin-bottom: 25px;
+}
+
 /* ---------------------------------------
    Navs
 ----------------------------------------*/
@@ -66,7 +70,6 @@ header{
   }
     h1{
     color: @white;
-    font-weight: bold;
     text-shadow: 0 0 15px rgba(0,0,0,0.1),
     1px 1px 0 rgba(0,0,0,0.15);
     }
@@ -219,7 +222,8 @@ header{
 }
 
 .tab-content{
-  height: 381px;
+  height: auto;
+  min-height: 381px;
   .content{
     padding-top: 20px;
     font-size: 1.1em;
@@ -238,7 +242,7 @@ header{
 }
 
 .tabs{
-   bottom: 20px;
+   bottom: 10px;
     position: absolute;
     right: 220px;
     .nav-tabs{
@@ -251,6 +255,18 @@ header{
   color: @purple;
   font-weight: bold;
   margin-right: 1em;
+}
+
+.testimonials{
+  background: url("../img/hol.jpg") no-repeat;
+  background-size: cover;
+  h1{
+    padding-top: 8%;
+  }
+  .image-holder{
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 /* ==========================================================================
