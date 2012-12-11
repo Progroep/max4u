@@ -12,7 +12,7 @@
 @black:                 #000;
 @grayDarker:            #222;
 @grayDark:              #333;
-@gray:                  #6A6A6A;
+@gray:                  #555;
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
@@ -20,20 +20,20 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #5D77BA;
-@blueDark:              #0078BA;
-@green:                 #96C458;
-@red:                   #E67373;
-@yellow:                #ccc;
-@orange:                #F29069;
-@pink:                  #8D1D6C;
-@purple:                #EB5A5D;
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #bf1e4b;
 
 
 // Scaffolding
 // -------------------------
 @bodyBackground:        @white;
-@textColor:             @gray;
+@textColor:             @grayDark;
 
 
 // Links
@@ -44,18 +44,36 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:      	'Open Sans', sans-serif;
+@sansFontFamily:        "Open Sans", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          100%;
+@baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        1.4em;
+@baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    300;    // instead of browser default, bold
+@headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+@fontSizeLarge:         @baseFontSize * 1.25; // ~18px
+@fontSizeSmall:         @baseFontSize * 0.85; // ~12px
+@fontSizeMini:          @baseFontSize * 0.75; // ~11px
+
+@paddingLarge:          11px 19px; // 44px
+@paddingSmall:          2px 10px;  // 26px
+@paddingMini:           0 6px;   // 22px
+
+@baseBorderRadius:      4px;
+@borderRadiusLarge:     6px;
+@borderRadiusSmall:     3px;
+
 
 // Tables
 // -------------------------
@@ -67,23 +85,23 @@
 // Buttons
 // -------------------------
 @btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 0%);
+@btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @yellow;
-@btnPrimaryBackgroundHighlight:     spin(@yellow, 0%);
+@btnPrimaryBackground:              @purple;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 5%);
 
-@btnInfoBackground:                 @blue;
-@btnInfoBackgroundHighlight:        @blue;
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
 
-@btnSuccessBackground:              @green;
-@btnSuccessBackgroundHighlight:     @green;
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
 
 @btnWarningBackground:              lighten(@orange, 15%);
 @btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               @red;
-@btnDangerBackgroundHighlight:      @red;
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
 
 @btnInverseBackground:              #444;
 @btnInverseBackgroundHighlight:     @grayDarker;
@@ -93,9 +111,11 @@
 // -------------------------
 @inputBackground:               @white;
 @inputBorder:                   #ccc;
-@inputBorderRadius:             0px;
+@inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
 @formActionsBackground:         #f5f5f5;
+@inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+
 
 // Dropdowns
 // -------------------------
@@ -106,7 +126,7 @@
 
 @dropdownLinkColor:             @grayDark;
 @dropdownLinkColorHover:        @white;
-@dropdownLinkColorActive:       @dropdownLinkColor;
+@dropdownLinkColorActive:       @white;
 
 @dropdownLinkBackgroundActive:  @linkColor;
 @dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
@@ -115,6 +135,7 @@
 
 // COMPONENT VARIABLES
 // --------------------------------------------------
+
 
 // Z-index master list
 // -------------------------
@@ -141,7 +162,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+@hrBorder:                @grayDark;
 
 
 // Horizontal forms & lists
@@ -157,18 +178,19 @@
 // Navbar
 // -------------------------
 @navbarCollapseWidth:             979px;
+@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                #fefefe;
+@navbarBackground:                #fff;
 @navbarBorder:                    #fff;
 
 @navbarText:                      #777;
-@navbarLinkColor:                 #777;
+@navbarLinkColor:                 @purple;
 @navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColorActive:           @purple;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkBackgroundActive:      #fff;
 
 @navbarBrandColor:                @navbarLinkColor;
 

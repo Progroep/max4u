@@ -3,47 +3,103 @@
 @import "base.less";
 
 .vert{
-  height: 100%;
+
   .container{
     height: 100%;
     .row-fluid{
       height:100%;
-      [class*="span"]{
-        height: 100%;
-        display: table;
         .vert-content{
           display: table-cell;
           vertical-align: middle;
         }
-      }
     }
   }
 }
+
 /* ---------------------------------------
    Typografie
 ----------------------------------------*/
+html{
+  height: 100%;
+}
 
 body {
   color: #6a6a6a;
+  height: 100%;
 }
 
 /* ---------------------------------------
    Navs
 ----------------------------------------*/
-
-
-header h1{
-  color: @white;
-  font-weight: bold;
+.navbar-inner{
+  box-shadow: none;
 }
+
+.navbar .brand{
+  max-width: 150px;
+  padding: 20px 20px 0;
+}
+
+.navbar .nav{
+  padding-top: 30px;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  box-shadow: none;
+}
+
+header{
+  height: 70%;
+  font-size: 1.05em;
+  position: relative;
+  .container{
+    z-index: 2;
+    position: relative;
+  }
+    h1{
+    color: @white;
+    font-weight: bold;
+    padding-top: 10%;
+    text-shadow: 0 0 15px rgba(0,0,0,0.1),
+    1px 1px 0 rgba(0,0,0,0.05);
+    }
+    h4{
+      color: @linkColor;
+    }
+}
+
 
 .desk{
 	background: url("../img/desk.jpg") no-repeat center center;
 	background-size: cover;
-	height: 600px;
 }
 
+.pattern-overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: url("https://www.myenergy.com/assets/bg_overlay_pattern_001.png") repeat;
+  z-index:1;
+  opacity: 0.4;
+}
 
+.woman{
+  background: url("../img/woman.png") no-repeat right bottom;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  height: 500px;
+  width: 750px;
+  z-index: 3;
+}
+
+.druk{
+  height: 100%;
+  .span12{
+    padding-top: 10%;
+  }
+}
 
 /* ==========================================================================
   Responsive styles | Main site
