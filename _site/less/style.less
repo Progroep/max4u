@@ -28,6 +28,10 @@ body {
   height: 100%;
 }
 
+strong{
+  color: @purple;
+}
+
 /* ---------------------------------------
    Navs
 ----------------------------------------*/
@@ -38,6 +42,10 @@ body {
 .navbar .brand{
   max-width: 150px;
   padding: 20px 20px 0;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav{
@@ -59,19 +67,41 @@ header{
     h1{
     color: @white;
     font-weight: bold;
-    padding-top: 10%;
     text-shadow: 0 0 15px rgba(0,0,0,0.1),
-    1px 1px 0 rgba(0,0,0,0.05);
+    1px 1px 0 rgba(0,0,0,0.15);
     }
     h4{
       color: @linkColor;
     }
 }
 
+.scroll-hint{
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  i{
+    color: #fff;
+    font-size: 2em;
+  }
+}
+
+
+.slide {
+  height: 100%;
+  min-height: 700px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
 
 .desk{
-	background: url("../img/desk.jpg") no-repeat center center;
+	background: url("https://d2zd51ski5qnr9.cloudfront.net/assets/bg-header-image-8-29e1f2bccc04c0dc4cac929a7dfb6e23.jpg") no-repeat center center;
 	background-size: cover;
+  background-attachment: fixed;
+  h1{
+    padding-top: 20%;
+  }
 }
 
 .pattern-overlay{
@@ -84,21 +114,143 @@ header{
   opacity: 0.4;
 }
 
-.woman{
-  background: url("../img/woman.png") no-repeat right bottom;
-  position: absolute;
-  right: 100px;
-  bottom: 0;
-  height: 500px;
-  width: 750px;
-  z-index: 3;
-}
 
 .druk{
   height: 100%;
+  background: url("http://www.zensorium.com/tinke/css/../img/bg/bg_intro.jpg") repeat;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  .container{
+    position: relative;
+  }
   .span12{
     padding-top: 10%;
   }
+}
+
+  
+.geld-verdienen{
+  background: url("http://nest.com/images/living_with_nest/day_30_background-5683c224.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  h1{
+    font-size: 3em;
+    color: #fff;
+    padding-top: 20%;
+    position: relative;
+  }
+  img{
+    position: relative;
+    padding-top: 10%;
+  }
+
+}
+
+.denken{
+  h1{
+    color: @purple;
+    padding-top: 15%;
+  }
+  .span3{
+    position: relative;
+  }
+  .icon-block{
+    position: relative;
+  }
+}
+
+.max4u{
+  background: url("../img/desk.jpg");
+  background-size: cover;
+  h1{
+    padding-top: 25%;
+  }
+  .btn{
+    margin-top: 10%;
+  }
+}
+
+.big-icon{
+  color: @purple;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.icon-block{
+  padding: 1em;
+  margin: 30px 0;
+  i{
+    font-size: 5em;
+    margin-bottom: 20px;
+    &.icon-leaf{
+      color: @green;
+    }
+    &.icon-phone{
+      color: @blueDark;
+    }
+    &.icon-rss{
+      color: @orange;
+    }
+    &.icon-briefcase{
+      color: @pink;
+    }
+  }
+}
+
+
+.besparen{
+  background: url("http://nest.com/images/living_with_nest/day_30_background-5683c224.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  min-height: 900px;
+  h1{
+    padding-top: 12%;
+  }
+  .well{
+    background: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 -10px 50px rgba(0, 0, 0, 0.1) inset;
+    .row-fluid{
+      position: relative;
+      height: 100%;
+    }
+  }
+}
+
+.tab-content{
+  height: 381px;
+  .content{
+    padding-top: 20px;
+    font-size: 1.1em;
+    h2{
+      color: @purple;
+    }
+  }
+}
+
+.stap1{
+  background: url("https://www.myenergy.com/assets/home_features_screen1.png") -120px 0px no-repeat;
+  height: 341px;
+  width: 500px;
+  position: absolute;
+  margin: 20px 0;
+}
+
+.tabs{
+   bottom: 20px;
+    position: absolute;
+    right: 220px;
+    .nav-tabs{
+      border-bottom: none;
+    }
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+  border: none;
+  color: @purple;
+  font-weight: bold;
+  margin-right: 1em;
 }
 
 /* ==========================================================================
