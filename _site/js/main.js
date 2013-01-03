@@ -22,14 +22,12 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 }
 
 
-
-
 jQuery(document).ready(function ($) {
 
     //initialise Stellar.js
     $(window).stellar({
-      horizontalScrolling: false,
-      hideDistantElements: false
+      hideDistantElements: false,
+      horizontalScrolling: false
     });
     //Cache some variables
     var links = $('.navigation').find('li');
@@ -80,5 +78,33 @@ jQuery(document).ready(function ($) {
         goToByScroll(dataslide);
     });
 
+/* Waypoint css animations triggers
+-------------------------------------------------------------- */
+
+    //Slide3
+    $('#slide3').waypoint(function(event, direction) {
+       if (direction === 'down') {
+           $(this).addClass("visible");
+          }
+          else{
+            $(this).removeClass("visible");
+          }
+    }, {
+       offset: 300  
+    });
+
+    //Slide 4
+    $('#slide4').waypoint(function(event, direction) {
+       if (direction === 'down') {
+           $("i, h4").addClass("visible");
+          }
+          else{
+            $("i, h4").removeClass("visible");
+          }
+    }, {
+       offset: 300  
+    });
 
 });
+
+
