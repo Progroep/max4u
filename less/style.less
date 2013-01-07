@@ -23,6 +23,15 @@ html{
 body {
   color: #6a6a6a;
   height: 100%;
+  line-height: 1.8em;
+}
+
+p{
+  line-height: 1.95em;
+}
+
+.intro{
+  line-height: 1.6em;
 }
 
 strong{
@@ -37,6 +46,10 @@ section{
 
 }
 
+
+h2{
+  font-size: 3.2em;
+}
 /* ---------------------------------------
    Navs
 ----------------------------------------*/
@@ -73,8 +86,9 @@ header{
     color: @purple;
     text-shadow: none;
     }
-    h4{
+    h2{
       color: @linkColor;
+      text-shadow: none;
     }
 }
 
@@ -132,26 +146,26 @@ header{
     position: relative;
   }
   .span12{
-    padding-top: 10%;
+    padding-top: 20%;
   }
 }
 
 #slide3{
   left: -90%;
   .opacity(0);
-   -webkit-transition: 0.8s ease all;
-    -moz-transition: 0.8s ease all;
-    -o-transition: 0.8s ease all;
-    -ms-transition: 0.8s ease all;
-    transition: 0.8s ease all;
+   -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    transition: 0.2s ease all;
   &.visible{
     left: 0;
     .opacity(100);
-    -webkit-transition: 0.8s ease all;
-    -moz-transition: 0.8s ease all;
-    -o-transition: 0.8s ease all;
-    -ms-transition: 0.8s ease all;
-    transition: 0.8s ease all;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    transition: 0.2s ease all;
   }
 } 
 
@@ -200,17 +214,17 @@ header{
     position: relative;
     top: -200px;
     .opacity(0);
-    -webkit-transition: 0.2s ease all;
-      -moz-transition: 0.2s ease all;
-      -o-transition: 0.2s ease all;
-      -ms-transition: 0.2s ease all;
-      transition: 0.2s ease all;
+    -webkit-transition: 0.1s ease all;
+      -moz-transition: 0.1s ease all;
+      -o-transition: 0.1s ease all;
+      -ms-transition: 0.1s ease all;
+      transition: 0.1s ease all;
     &:hover{
-      -webkit-transition: 0.2s ease all;
-      -moz-transition: 0.2s ease all;
-      -o-transition: 0.2s ease all;
-      -ms-transition: 0.2s ease all;
-      transition: 0.2s ease all;
+      -webkit-transition: 0.1s ease all;
+      -moz-transition: 0.1s ease all;
+      -o-transition: 0.1s ease all;
+      -ms-transition: 0.1s ease all;
+      transition: 0.1s ease all;
     }
     &.visible{
       top: 0;
@@ -301,7 +315,7 @@ header{
 }
 
 .max4u{
-  background: url("../img/desk.jpg");
+  background: url("http://0.s3.envato.com/files/6425963/receipts_110613_02.jpg");
   background-size: cover;
   h1{
     padding-top: 25%;
@@ -322,13 +336,16 @@ header{
 
 
 .besparen{
-  background: url("http://nest.com/images/living_with_nest/day_30_background-5683c224.jpg") no-repeat center center;
+  background: url("http://1.s3.envato.com/files/2846629/Wwoman_holding_paper_sitting_by_laptoprunning_business.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   height: auto;
   min-height: 900px;
   h1{
     padding-top: 12%;
+  }
+  h3{
+    color: @purple;
   }
   .well{
     background: #fff;
@@ -343,7 +360,7 @@ header{
 
 .tab-content{
   height: auto;
-  min-height: 381px;
+  min-height: 450px;
   .content{
     padding-top: 20px;
     font-size: 1.1em;
@@ -374,6 +391,24 @@ header{
   }
 }
 
+#a2 .span5{
+  background: url("../img/compare.jpg") no-repeat -120px 0px;
+  background-size: cover;
+  height: 450px;
+}
+
+#a3 .span5{
+  background: url("../img/rapport.jpg") no-repeat -120px 0px;
+  background-size: cover;
+  height: 450px;
+}
+
+#a4 .span5{
+  background: url("../img/piggy.jpg") no-repeat -120px 0px;
+  background-size: cover;
+  height: 450px;
+}
+
 .tabs{
    bottom: 10px;
     position: absolute;
@@ -400,6 +435,53 @@ header{
     width: 300px;
     margin: 0 auto;
   }
+}
+
+
+footer{
+  background: @grayLighter;
+  padding: 20px 0 10px;
+}
+
+.contact-header{
+  background: url(http://1.s3.envato.com/files/2846629/Wwoman_holding_paper_sitting_by_laptoprunning_business.jpg) bottom no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+
+/* Contact Form styles
+-------------------------------------------------- */
+
+
+#errors {   
+    display:none;  
+}  
+  
+#errors li {  
+    padding: 2px;  
+    list-style:none;  
+}  
+  
+#errors li:before {  
+    content: ' - ';  
+}  
+   
+#success {  
+     display: none;
+}  
+  
+#errors.visible, #success.visible {  
+    display:block;  
+}  
+
+#informatie .border-right .alert-success p {
+    color: #468847;
+}
+
+
+input, textarea, .uneditable-input {
+    width: 95%;
 }
 
 /* ==========================================================================
