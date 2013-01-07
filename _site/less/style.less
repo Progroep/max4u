@@ -2,18 +2,15 @@
 @import "bootstrap/responsive.less";
 @import "base.less";
 
-.vert{
+.vert-box{
+  height: 100%;
+  display: table;
+}
 
-  .container{
-    height: 100%;
-    .row-fluid{
-      height:100%;
-        .vert-content{
-          display: table-cell;
-          vertical-align: middle;
-        }
-    }
-  }
+.vert-box-content{
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* ---------------------------------------
@@ -34,6 +31,10 @@ strong{
 
 .page-header{
   margin-bottom: 25px;
+}
+
+section{
+
 }
 
 /* ---------------------------------------
@@ -135,7 +136,25 @@ header{
   }
 }
 
-  
+#slide3{
+  left: -90%;
+  .opacity(0);
+   -webkit-transition: 0.8s ease all;
+    -moz-transition: 0.8s ease all;
+    -o-transition: 0.8s ease all;
+    -ms-transition: 0.8s ease all;
+    transition: 0.8s ease all;
+  &.visible{
+    left: 0;
+    .opacity(100);
+    -webkit-transition: 0.8s ease all;
+    -moz-transition: 0.8s ease all;
+    -o-transition: 0.8s ease all;
+    -ms-transition: 0.8s ease all;
+    transition: 0.8s ease all;
+  }
+} 
+
 .geld-verdienen{
   background: url("http://nest.com/images/living_with_nest/day_30_background-5683c224.jpg") no-repeat center center;
   background-size: cover;
@@ -153,7 +172,13 @@ header{
 
 }
 
-.denken{
+/* ---------------------------------------
+   Slide | en dan moet u vooral denken aan
+
+----------------------------------------*/
+
+
+#slide4{
   h1{
     color: @purple;
     padding-top: 15%;
@@ -161,8 +186,117 @@ header{
   .span3{
     position: relative;
   }
-  .icon-block{
+
+.icon-block{
+  position: relative;
+  padding: 1em;
+  margin: 20px 0;
+  i{
+    font-size: 5em;
+    display: block;
+    height: 100%;
+    padding: 50px 0;
+    width: 100%;
     position: relative;
+    top: -200px;
+    .opacity(0);
+    -webkit-transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -o-transition: 0.2s ease all;
+      -ms-transition: 0.2s ease all;
+      transition: 0.2s ease all;
+    &:hover{
+      -webkit-transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -o-transition: 0.2s ease all;
+      -ms-transition: 0.2s ease all;
+      transition: 0.2s ease all;
+    }
+    &.visible{
+      top: 0;
+      .opacity(100);
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg);
+      -ms-transform:rotate(360deg);
+      transform:rotate(360deg);
+      -webkit-transition: 0.5s ease all;
+      -moz-transition: 0.5s ease all;
+      -o-transition: 0.5s ease all;
+      -ms-transition: 0.5s ease all;
+      transition: 0.5s ease all;
+    }
+    &.icon-leaf{
+      color: @green;
+      &:hover{
+        background: @green;
+        color: @white;
+      }
+      &.visible{
+      -webkit-transition-delay: 0.2s;
+        -moz-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        -ms-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+      }
+    }
+    &.icon-phone{
+      color: @blueDark;
+       &:hover{
+        background: @blueDark;
+        color: @white;
+      }
+      &.visible{
+       -webkit-transition-delay: 0.4s;
+        -moz-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        -ms-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+      }
+    }
+    &.icon-rss{
+      color: @orange;
+       &:hover{
+        background: @orange;
+        color: @white;
+      }
+      &.visible{
+       -webkit-transition-delay: 0.6s;
+        -moz-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        -ms-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+      }
+    }
+    &.icon-briefcase{
+      color: @pink;
+       &:hover{
+        background: @pink;
+        color: @white;
+      }
+      &.visible{
+       -webkit-transition-delay: 0.8s;
+        -moz-transition-delay: 0.8s;
+        -o-transition-delay: 0.8s;
+        -ms-transition-delay: 0.8s;
+        transition-delay: 0.8s;
+      }
+    }
+  }
+}
+
+  
+}
+// Icon animation keyframes
+
+@keyframes icons
+{
+  0%   {
+    .scale(0.4);
+  }
+  100% {
+    .scale(1);
+    left: 0;
   }
 }
 
@@ -184,26 +318,7 @@ header{
   margin-top: 1em;
 }
 
-.icon-block{
-  padding: 1em;
-  margin: 30px 0;
-  i{
-    font-size: 5em;
-    margin-bottom: 20px;
-    &.icon-leaf{
-      color: @green;
-    }
-    &.icon-phone{
-      color: @blueDark;
-    }
-    &.icon-rss{
-      color: @orange;
-    }
-    &.icon-briefcase{
-      color: @pink;
-    }
-  }
-}
+
 
 
 .besparen{
