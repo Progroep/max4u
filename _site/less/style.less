@@ -50,7 +50,7 @@ section{
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
 .navbar .nav{
@@ -70,9 +70,8 @@ header{
     position: relative;
   }
     h1{
-    color: @white;
-    text-shadow: 0 0 15px rgba(0,0,0,0.1),
-    1px 1px 0 rgba(0,0,0,0.15);
+    color: @purple;
+    text-shadow: none;
     }
     h4{
       color: @linkColor;
@@ -99,12 +98,18 @@ header{
   background-attachment: fixed;
 }
 
-.desk{
-	background: url("https://d2zd51ski5qnr9.cloudfront.net/assets/bg-header-image-8-29e1f2bccc04c0dc4cac929a7dfb6e23.jpg") no-repeat center center;
+
+
+/* ---------------------------------------
+   First slide
+----------------------------------------*/
+
+.header{
+	background: url("../img/header.jpg") no-repeat top center;
 	background-size: cover;
   background-attachment: fixed;
   h1{
-    padding-top: 20%;
+    padding-top: 55%;
   }
 }
 
