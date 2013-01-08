@@ -82,12 +82,13 @@ jQuery(document).ready(function ($) {
 -------------------------------------------------------------- */
 
     //Slide3
-    $('#slide3').waypoint(function(event, direction) {
+    $("#slide2").waypoint(function(event, direction) {
        if (direction === 'down') {
-           $(this).addClass("visible");
+           $(".delay").addClass("visible");
+           prompt("WTF");
           }
           else{
-            $(this).removeClass("visible");
+            $(".delay").removeClass("visible");
           }
     }, {
        offset: 300  

@@ -123,7 +123,7 @@ header{
 	background-size: cover;
   background-attachment: fixed;
   h1{
-    padding-top: 55%;
+    padding-top: 45%;
   }
 }
 
@@ -150,22 +150,20 @@ header{
   }
 }
 
-#slide3{
-  left: -90%;
-  .opacity(0);
-   -webkit-transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -o-transition: 0.2s ease all;
-    -ms-transition: 0.2s ease all;
-    transition: 0.2s ease all;
+.delay{
+  
+   -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    transition: 0.3s ease all;
   &.visible{
-    left: 0;
     .opacity(100);
-    -webkit-transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -o-transition: 0.2s ease all;
-    -ms-transition: 0.2s ease all;
-    transition: 0.2s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    transition: 0.3s ease all;
   }
 } 
 
@@ -178,6 +176,12 @@ header{
     color: #fff;
     padding-top: 8%;
     position: relative;
+  }
+  h2{
+    color: #fff;
+  }
+  strong{
+    font-weight: 300;
   }
   img{
     position: relative;
@@ -318,7 +322,7 @@ header{
   background: url("http://0.s3.envato.com/files/6425963/receipts_110613_02.jpg");
   background-size: cover;
   h1{
-    padding-top: 25%;
+    padding-top: 45%;
   }
   .btn{
     margin-top: 10%;
@@ -425,15 +429,44 @@ header{
   margin-right: 1em;
 }
 
+.geld-verdienen{
+  h4{
+  color: #fff;
+  strong{
+    font-weight: bold;
+  }
+  }
+  ul li{
+    color: #fff;
+    strong{
+      font-weight: bold;
+    }
+  }
+}
+
 .testimonials{
-  background: url("../img/hol.jpg") no-repeat;
+  background: @linkColor;
   background-size: cover;
   h1{
-    padding-top: 8%;
+    padding-top: 4%;
+    color: #fff !important;
   }
   .image-holder{
     width: 300px;
     margin: 0 auto;
+  }
+  .well{
+    min-height: 420px;
+  }
+  .well blockquote {
+    border-color: @purple;
+    min-height: 110px;
+  }
+}
+
+.wie{
+  h1, h3{
+    color: @purple;
   }
 }
 
