@@ -23,12 +23,13 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 
 
 jQuery(document).ready(function ($) {
-
-    //initialise Stellar.js
-    $(window).stellar({
-      hideDistantElements: false,
-      horizontalScrolling: false
-    });
+    if ( screen.availWidth > 780 ) {
+        //initialise Stellar.js
+        $(window).stellar({
+          hideDistantElements: false,
+          horizontalScrolling: false
+        });
+    };
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.slide');
