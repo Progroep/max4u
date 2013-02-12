@@ -78,6 +78,7 @@ jQuery(document).ready(function ($) {
         goToByScroll(dataslide);
     });
 
+
 /* Waypoint css animations triggers
 -------------------------------------------------------------- */
 
@@ -85,7 +86,6 @@ jQuery(document).ready(function ($) {
     $("#slide2").waypoint(function(event, direction) {
        if (direction === 'down') {
            $(".delay").addClass("visible");
-           prompt("WTF");
           }
           else{
             $(".delay").removeClass("visible");
