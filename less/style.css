@@ -8354,6 +8354,9 @@ h4 {
 .navbar .nav > .active > a:focus {
   box-shadow: none;
 }
+.navbar .nav > li > a {
+  font-size: 0.8em;
+}
 header {
   height: 70%;
   font-size: 1.05em;
@@ -8719,6 +8722,9 @@ header h2 {
 }
 .wie h1 {
   padding-top: 6%;
+}
+.faq .page-header h1 {
+  color: #bf1e4b;
 }
 footer {
   background: #eeeeee;

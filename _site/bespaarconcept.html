@@ -60,10 +60,11 @@
               <li class="active"><a href="index.html">Home</a></li>
                <li><a href="bespaarconcept.html">Ons bespaarconcept</a></li>
               <li><a href="bespaarconcept.html#wie">Over ons</a></li>
+              <li><a href="faq.html">Veelgestelde vragen</a></li>
           
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.php">Contact</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
