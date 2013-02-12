@@ -27,7 +27,7 @@ body {
 }
 
 p{
-  line-height: 1.95em;
+  line-height: 1.75em;
 }
 
 .intro{
@@ -48,8 +48,13 @@ section{
 
 
 h2{
-  font-size: 3.2em;
+  font-size: 2.2em;
 }
+
+h4{
+  font-size: 1.2em;
+}
+
 /* ---------------------------------------
    Navs
 ----------------------------------------*/
@@ -114,7 +119,6 @@ header{
     padding: 3% 0 5%;
   }
 }
-
 
 
 /* ---------------------------------------
@@ -195,7 +199,6 @@ header{
 #slide4{
   h1{
     color: @purple;
-    padding-top: 5%;
   }
   .span3{
     position: relative;
@@ -473,6 +476,7 @@ header{
 footer{
   background: @grayLighter;
   padding: 20px 0 10px;
+  font-size: 0.75em;
 }
 
 .contact-header{
@@ -518,4 +522,92 @@ input, textarea, .uneditable-input {
 /* ==========================================================================
   Responsive styles | Main site
 ========================================================================== */
+
+
+
+@media screen and (min-width: 480px) {
+  body { font-size: 100%; }
+}
+
+@media screen and (min-width: 680px) {
+  body {
+    font-size: 110%;
+  }
+
+  p{
+    font-weight: 300;
+  }
+
+  .mac p{
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  body {font-size: 110%;}
+
+}
+
+@media (max-width: 767px) {
+  .offset4{
+    margin-left: 0;
+  }
+
+   footer{
+    font-size: 50%;
+   }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+   .block{
+      width: 724px;
+   }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 115%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 125%;
+  }
+
+  .block{
+   width: 1170px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 130%;
+  }
+  .countdown.in-view {
+    margin-top: 4em;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  body {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 1950px) {
+  body {
+    font-size: 160%;
+  }
+
+  .container{
+   width: 1600px;
+
+   .block{
+      width: 1600px;
+   }
+  }
+
+}
 
