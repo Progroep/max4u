@@ -119,11 +119,12 @@ header{
 ----------------------------------------*/
 
 .header{
-	background: url("../img/header.jpg") no-repeat top center;
-	background-size: cover;
+  background: url("../img/header.jpg") no-repeat top center;
+  background-size: cover;
   background-attachment: fixed;
   h1{
-    padding-top: 55%;
+    padding-top: 40%;
+    text-shadow: 0 0 35px rgba(0,0,0,0.03);
   }
 }
 
@@ -137,35 +138,25 @@ header{
   opacity: 0.4;
 }
 
-
-.druk{
-  height: 100%;
-  background: url("http://www.zensorium.com/tinke/css/../img/bg/bg_intro.jpg") repeat;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
-  .container{
-    position: relative;
-  }
-  .span12{
-    padding-top: 20%;
-  }
-}
-
-#slide3{
-  left: -90%;
+.delay{
   .opacity(0);
-   -webkit-transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -o-transition: 0.2s ease all;
-    -ms-transition: 0.2s ease all;
-    transition: 0.2s ease all;
+   -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    transition: 0.3s ease all;
   &.visible{
-    left: 0;
     .opacity(100);
-    -webkit-transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -o-transition: 0.2s ease all;
-    -ms-transition: 0.2s ease all;
-    transition: 0.2s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    -webkit-transition-delay: 1.2s;
+    -moz-transition-delay: 1.2s;
+    -o-transition-delay: 1.2s;
+    -ms-transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
 } 
 
@@ -176,8 +167,14 @@ header{
   h1{
     font-size: 3em;
     color: #fff;
-    padding-top: 20%;
+    padding-top: 6%;
     position: relative;
+  }
+  h2{
+    color: #fff;
+  }
+  strong{
+    font-weight: 300;
   }
   img{
     position: relative;
@@ -195,7 +192,7 @@ header{
 #slide4{
   h1{
     color: @purple;
-    padding-top: 15%;
+    padding-top: 5%;
   }
   .span3{
     position: relative;
@@ -318,7 +315,7 @@ header{
   background: url("http://0.s3.envato.com/files/6425963/receipts_110613_02.jpg");
   background-size: cover;
   h1{
-    padding-top: 25%;
+    padding-top: 45%;
   }
   .btn{
     margin-top: 10%;
@@ -336,7 +333,7 @@ header{
 
 
 .besparen{
-  background: url("http://1.s3.envato.com/files/2846629/Wwoman_holding_paper_sitting_by_laptoprunning_business.jpg") no-repeat center center;
+  background: url("http://max4u.nl/img/bespaarconceptheader.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   height: auto;
@@ -425,15 +422,49 @@ header{
   margin-right: 1em;
 }
 
+.geld-verdienen{
+  h4{
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+  strong{
+    font-weight: bold;
+  }
+  }
+  ul li{
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+    strong{
+      font-weight: bold;
+    }
+  }
+}
+
 .testimonials{
-  background: url("../img/hol.jpg") no-repeat;
+  background: @linkColor;
   background-size: cover;
   h1{
-    padding-top: 8%;
+    padding-top: 4% !important;
+    color: #fff !important;
   }
   .image-holder{
     width: 300px;
     margin: 0 auto;
+  }
+  .well{
+    min-height: 420px;
+  }
+  .well blockquote {
+    border-color: @purple;
+    min-height: 110px;
+  }
+}
+
+.wie{
+  h1, h3{
+    color: @purple;
+  }
+  h1{
+    padding-top: 6%;
   }
 }
 
@@ -444,7 +475,7 @@ footer{
 }
 
 .contact-header{
-  background: url(http://1.s3.envato.com/files/2846629/Wwoman_holding_paper_sitting_by_laptoprunning_business.jpg) bottom no-repeat;
+  background: url(../img/bespaarconceptheader.jpg) bottom no-repeat;
   background-size: cover;
   height: 300px;
 }

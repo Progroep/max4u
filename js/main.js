@@ -78,16 +78,17 @@ jQuery(document).ready(function ($) {
         goToByScroll(dataslide);
     });
 
+
 /* Waypoint css animations triggers
 -------------------------------------------------------------- */
 
     //Slide3
-    $('#slide3').waypoint(function(event, direction) {
+    $("#slide2").waypoint(function(event, direction) {
        if (direction === 'down') {
-           $(this).addClass("visible");
+           $(".delay").addClass("visible");
           }
           else{
-            $(this).removeClass("visible");
+            $(".delay").removeClass("visible");
           }
     }, {
        offset: 300  
