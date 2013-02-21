@@ -8723,6 +8723,9 @@ header h2 {
 .wie h1 {
   padding-top: 6%;
 }
+.faq {
+  height: auto;
+}
 .faq .page-header h1 {
   color: #bf1e4b;
 }

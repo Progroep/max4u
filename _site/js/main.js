@@ -22,6 +22,14 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 }
 
 
+// Smooth scrolling anchor links 
+$('.smooth-scroll').on('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
+
+   // edit: Opera requires the "html" elm. animated
+});
+
 jQuery(document).ready(function ($) {
     if ( screen.availWidth > 780 ) {
         //initialise Stellar.js
@@ -108,6 +116,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
 
   
 /* CONTACT FORM 

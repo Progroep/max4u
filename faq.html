@@ -2,12 +2,14 @@
 layout: default
 title: Max4U
 tagline: Eerlijk besparen
+htmlextra: class="noheight"
+bodyextra: class="faq" id="faq" data-spy="scroll" data-target="#navlinks" data-offset="300"
 ---
 
 <div class="contact-header">
 </div>
 
-<section class="faq" data-spy="scroll" data-target="#navlinks" data-offset="0">
+<section class="faq">
 	<div class="container relative">
 		<div class="row-fluid">
 			<div class="span8">
@@ -98,7 +100,7 @@ tagline: Eerlijk besparen
 			<div class="span3">
 				<ul class="nav nav-list affix-top hidden-phone" id="navlinks" data-spy="affix" data-offset-top="170">
 					<li><a href="#goedkoper"><i class="icon-chevron-right"></i>Waarom is MAX4U zo goedkoop?</a></li>
-				     <li><a href="#contract"><i class="icon-chevron-right"></i>Zit ik aan jullie vast?</a></li>
+				     <li><a href="#contract"><i class="icon-chevron-right"></i>Kan ik makkelijk van jullie af?</a></li>
 				     <li><a href="#zaken"><i class="icon-chevron-right"></i>Kan ik alles niet beter zelf regelen?</a></li>
 				     <li><a href="#leuk"><i class="icon-chevron-right"></i>Hoe verdient MAX4U?</a></li>
 				     <li><a href="#bijhouden"><i class="icon-chevron-right"></i>Houden jullie alles bij?</a></li>
@@ -114,10 +116,7 @@ tagline: Eerlijk besparen
 </section>
 
 <script>
- $(function () {
-    $('[data-spy="scroll"]').each(function () {
-    var $spy = $(this).scrollspy('refresh')
-    });
-});
+$(document).ready(function(){
+    $('.faq').scrollspy();
+}); 
 </script>
-

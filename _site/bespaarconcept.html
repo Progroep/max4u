@@ -4,7 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -39,6 +38,8 @@
    <script src="http://progroep.github.com/max4u/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
 </head>
+
+<body >
 
  <!-- NAVBAR
     ================================================== -->
@@ -386,12 +387,20 @@
         <script src="js/vendor/jquery.stellar.min.js"></script>
         <script src="js/vendor/waypoints.min.js"></script>
         <script src="js/vendor/jquery.easing.1.3.js"></script>
-         <script src="http://progroep.github.com/max4u/js/vendor/bootstrap.js"></script>
-<script>
-  var _gaq=[['_setAccount','UA-26906941-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
+        <script src="http://progroep.github.com/max4u/js/vendor/bootstrap.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38678896-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
 
 <!--[if lt IE 7 ]>
