@@ -8706,8 +8706,11 @@ header h2 {
   color: #fff !important;
 }
 .testimonials .image-holder {
-  width: 300px;
+  width: 50%;
   margin: 0 auto;
+}
+.testimonials .image-holder .img-circle {
+  border: 0.3em solid #fff;
 }
 .testimonials .well {
   min-height: 420px;
