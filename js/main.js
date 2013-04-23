@@ -130,6 +130,26 @@ $("#test-close-sam, #test-close-sam-x").click(function (e) {
    e.preventDefault();
   $("#sam-story").toggle("slow");
 });  
+
+$("#test-eddy").click(function (e) {
+   e.preventDefault();
+  $("#eddy-story").toggle("slow");
+});
+  
+$("#test-close-eddy, #test-close-eddy-x").click(function (e) {
+   e.preventDefault();
+  $("#eddy-story").toggle("slow");
+});  
+
+$("#test-jw").click(function (e) {
+   e.preventDefault();
+  $("#jw-story").toggle("slow");
+});
+  
+$("#test-close-jw, #test-close-jw-x").click(function (e) {
+   e.preventDefault();
+  $("#jw-story").toggle("slow");
+});  
 /* CONTACT FORM 
 ***************************************************************************************************/
 
