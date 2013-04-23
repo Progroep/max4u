@@ -8732,8 +8732,9 @@ header h2 {
   text-align: left;
 }
 .testimonial-story {
-  position: absolute;
+  position: fixed;
   top: 0%;
+  padding-top: 5em;
   bottom: 0%;
   width: 100%;
   overflow: scroll-y;
