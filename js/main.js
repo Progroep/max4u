@@ -126,7 +126,7 @@ $("#test-sam").click(function (e) {
   $("#sam-story").toggle("slow");
 });
   
-$("#test-close-sam").click(function (e) {
+$("#test-close-sam, #test-close-sam-x").click(function (e) {
    e.preventDefault();
   $("#sam-story").toggle("slow");
 });  
