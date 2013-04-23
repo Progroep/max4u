@@ -8750,10 +8750,10 @@ header h2 {
   margin: 0 auto;
 }
 .testimonial-story .close {
-  font-size: 1em;
+  font-size: 2em;
   font-weight: bold;
   position: absolute;
-  right: 5em;
+  right: 2em;
   text-shadow: 0 1px 0 #FFFFFF;
   top: 1em;
 }
