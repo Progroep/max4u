@@ -8731,7 +8731,7 @@ header h2 {
   min-height: 110px;
   text-align: left;
 }
-.testimonials .testimonial-story {
+.testimonial-story {
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -8741,10 +8741,10 @@ header h2 {
   z-index: 3000;
   background: #fff;
 }
-.testimonials .testimonial-story .container {
+.testimonial-story .container {
   min-height: 75%;
 }
-.testimonials .testimonial-story .container .row-fluid {
+.testimonial-story .container .row-fluid {
   max-width: 90%;
   margin: 0 auto;
 }
