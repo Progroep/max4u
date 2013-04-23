@@ -8749,6 +8749,14 @@ header h2 {
   max-width: 90%;
   margin: 0 auto;
 }
+.testimonial-story .close {
+  font-size: 1em;
+  font-weight: bold;
+  position: absolute;
+  right: 5em;
+  text-shadow: 0 1px 0 #FFFFFF;
+  top: 1em;
+}
 .wie h1,
 .wie h3 {
   color: #bf1e4b;
