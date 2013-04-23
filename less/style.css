@@ -8712,8 +8712,16 @@ header h2 {
 .testimonials .image-holder .img-circle {
   border: 0.3em solid #fff;
 }
+.testimonials .image-holder .img-circle:before {
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
+}
 .testimonials .well {
-  min-height: 420px;
+  min-height: 400px;
+}
+.testimonials .well hr {
+  margin: 15px 0;
 }
 .testimonials .well blockquote {
   border-color: #bf1e4b;
