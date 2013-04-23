@@ -467,6 +467,7 @@ header{
 .testimonials{
   background: @linkColor;
   background-size: cover;
+  position: relative;
   h1{
     padding-top: 4% !important;
     color: #fff !important;
@@ -497,6 +498,24 @@ header{
     border-color: @purple;
     min-height: 110px;
     text-align: left;
+  }
+
+  .testimonial-story{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;  
+    overflow: scroll-y;
+    display: none;
+    z-index: 3000;
+    background: #fff;
+    .container{ 
+      min-height: 75%;
+      .row-fluid{
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
   }
 }
 

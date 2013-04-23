@@ -8700,6 +8700,7 @@ header h2 {
 .testimonials {
   background: #0088cc;
   background-size: cover;
+  position: relative;
 }
 .testimonials h1 {
   padding-top: 4% !important;
@@ -8729,6 +8730,23 @@ header h2 {
   border-color: #bf1e4b;
   min-height: 110px;
   text-align: left;
+}
+.testimonials .testimonial-story {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  width: 100%;
+  overflow: scroll-y;
+  display: none;
+  z-index: 3000;
+  background: #fff;
+}
+.testimonials .testimonial-story .container {
+  min-height: 75%;
+}
+.testimonials .testimonial-story .container .row-fluid {
+  max-width: 90%;
+  margin: 0 auto;
 }
 .wie h1,
 .wie h3 {

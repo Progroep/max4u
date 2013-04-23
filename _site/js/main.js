@@ -118,7 +118,18 @@ jQuery(document).ready(function ($) {
 });
 
 
+/* Clickevent testimonials
+-------------------------------------------------------------- */
+
+$("#test-sam").click(function (e) {
+   e.preventDefault();
+  $("#sam-story").toggle("slow");
+});
   
+$("#test-close-sam").click(function (e) {
+   e.preventDefault();
+  $("#sam-story").toggle("slow");
+});  
 /* CONTACT FORM 
 ***************************************************************************************************/
 
