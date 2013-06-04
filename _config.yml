@@ -3,4 +3,4 @@ auto:        true
 server:      false
 server_port: 4000
 baseurl:    /
-url: http://progroep.github.com/max4u
+url: http://max4u.nl

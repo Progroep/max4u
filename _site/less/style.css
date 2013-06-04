@@ -8890,3 +8890,18 @@ textarea,
     width: 1600px;
   }
 }
+.mail-sig {
+  font-size: 70%;
+}
+.mail-sig img {
+  max-width: 180px;
+}
+.mail-sig address {
+  margin-bottom: 20px;
+}
+.mail-sig .small-pad {
+  margin-bottom: 0;
+}
+.gray-lighter {
+  background: #eee;
+}
